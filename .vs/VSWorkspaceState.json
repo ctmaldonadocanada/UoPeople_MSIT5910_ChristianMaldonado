@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\sql",
-    "\\sql\\dimensions",
-    "\\sql\\etl",
-    "\\sql\\facts",
     "\\sql\\staging_transform"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\sql\\staging_transform",
   "PreviewInSolutionExplorer": false
 }
