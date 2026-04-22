@@ -6,7 +6,7 @@ ETL pipeline for data warehouse with staging, dimensions, facts, and tests.
 ## Folder Structure
 
 - **`/sql`** – SQL scripts organized by layer
-  - `staging_transform/` – Staging tables
+  - `staging_transform/` – Objects related to StagingDB and TransformDB
   - `dimensions/` – Dimension tables
   - `facts/` – Fact tables
   - `etl/` – Extract, transform, load scripts
