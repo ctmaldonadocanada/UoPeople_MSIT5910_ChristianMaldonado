@@ -1,0 +1,20 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# SQL Server
+*.bak
+*.trn
+*.mdf
+*.ldf
+
+# Build
+bin/
+obj/
+out/
+
+# OS
+Thumbs.db
+.DS_Store
