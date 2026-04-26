@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\data",
     "\\sql",
+    "\\sql\\etl",
     "\\sql\\staging_transform"
   ],
-  "SelectedNode": "\\sql\\staging_transform",
   "PreviewInSolutionExplorer": false
 }
