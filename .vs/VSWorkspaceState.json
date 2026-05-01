@@ -3,8 +3,11 @@
     "",
     "\\data",
     "\\sql",
+    "\\sql\\dimensions",
     "\\sql\\etl",
-    "\\sql\\staging_transform"
+    "\\sql\\facts",
+    "\\sql\\staging_transform",
+    "\\sql\\tests"
   ],
   "PreviewInSolutionExplorer": false
 }
