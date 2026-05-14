@@ -1,7 +1,9 @@
-# Data Warehouse Project
+# MSIT 5910-01 Capstone Project
+# Christian Maldonado
+# Design and Development of an Integrated Data Pipeline for Monitoring Return-to-Office Compliance Using Access Logs and HR Data 
 
 ## Overview
-ETL pipeline for data warehouse with staging, dimensions, facts, and tests.
+ETL for data warehouse with staging, dimensions, facts, and tests.
 
 ## Folder Structure
 
@@ -17,7 +19,4 @@ ETL pipeline for data warehouse with staging, dimensions, facts, and tests.
 
 1. Clone the repository
 2. Review SQL scripts in `/sql`
-3. Execute scripts in order: staging → dimensions → facts → etl
-
-## License
-[Add your license here]
+3. Execute scripts in order: staging_transform → dimensions → facts → etl
