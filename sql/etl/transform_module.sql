@@ -2,7 +2,7 @@
 
 
 -- Parameter
-DECLARE @MonthsBack INT = 6;
+DECLARE @MonthsBack INT = 6; -- considering the latest 6 months data; can be adjusted depending on prune date value adjustment.
 
 -- Attendance TransformDB
 
@@ -85,12 +85,20 @@ BEGIN
     );
 END;
 
+DELETE FROM [TransformDB].[dbo].[Attendance_Transform]
+WHERE WeekDate IN (
+    SELECT WeekDate
+    FROM [TransformDB].[dbo].[Attendance_Transform]
+    GROUP BY WeekDate
+    HAVING SUM(DaysPresent) = 0
+); -- delete records where the sum of the presentdate is 0 for those whole weekdate (added 2026/05/17)
+
 -- Employee TransformDB
 
 -- 1. Truncate target table
 TRUNCATE TABLE [TransformDB].[dbo].[EmployeeDetails_Transform];
 
--- 2. Insert data from staging
+-- 2. Insert data from staging (full load as this is a master table not transaction)
 INSERT INTO [TransformDB].[dbo].[EmployeeDetails_Transform]
 (
     EmployeeID,

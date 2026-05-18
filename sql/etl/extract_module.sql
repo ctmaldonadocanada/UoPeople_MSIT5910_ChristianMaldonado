@@ -2,7 +2,7 @@
 
 
 -- Declare variable for number of months
-DECLARE @MonthsBack INT = 3;
+DECLARE @MonthsBack INT = 6;
 
 -- Check if staging table has data
 IF EXISTS (SELECT 1 FROM [StagingDB].[dbo].[AccessLogs_Table])
